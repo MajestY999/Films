@@ -4,7 +4,7 @@ import CatalogView from '../views/CatalogView.vue'
 
 const routes = [
   {
-    path: '/',
+    path: '/',  //  по этому пути отрисуется HomeView на /Films/
     name: 'home',
     component: HomeView
   },
@@ -22,7 +22,7 @@ const routes = [
 ]
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHistory('/Films/'), //  Учитываем base path
   routes
 })
 
